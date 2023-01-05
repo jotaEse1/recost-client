@@ -1,0 +1,20 @@
+.message {
+    width: max-content;
+    height: max-content;
+    position: fixed;
+    z-index: 40;
+    top: 12vh;
+    left: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #5699F6;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    border-radius: 3px;
+    padding: 0.5rem;
+}
+
+.message > p {
+    color: #fff
+}

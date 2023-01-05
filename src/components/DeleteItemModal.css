@@ -1,0 +1,50 @@
+.modal-delete {
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+}
+
+.modal-delete > div {
+    width: 16rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 25px 0px #000;
+    background-color: #001428;
+    position: relative;
+}
+
+.modal-delete > div > h4 {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.modal-delete-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-delete-buttons > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;                    
+}
+
+.modal-delete-buttons > button > svg {
+    color: #5699F6;
+    font-size: 1.6rem;
+}

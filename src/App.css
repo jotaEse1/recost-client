@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #001428;
+  color: #5699F6;
+  /* texto: #365076, fondo: #041A33, rojo: #ED5E68, blancos: ececed/ e7e8e9 / e3e4e5 / dfdfe1 / dbdbdd*/
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #001428;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5699F6;
+  border-radius: 5px;
+}
+
+/*Disable arrows in input type number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}

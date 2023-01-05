@@ -1,0 +1,89 @@
+.signin-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-container-div {
+    width: 20rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #041A33;
+}
+
+.signin-container-div > h2 {
+    color: #fff;
+}
+
+.signin-container-div > form {
+    height: 15rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.signin-container-div > form > label{
+    width: 14rem;
+}
+
+.signin-container-div > form > input{
+    width: 14rem;
+    height: 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff2;
+    border-radius: 3px;
+}
+
+.signin-container-div > form > input::placeholder{
+    color: #fff8;
+    
+}
+
+.signin-container-div > form > span{
+    font-size: 0.8rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.signin-container-div > form > span:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.disabled {
+    background-color: #888;
+    color: #fff;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    padding: 0.2rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #5699F6;
+    color: #fff;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    padding: 0.2rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 330px){
+    .signin-container-div {
+        width: 90vw;
+    }
+
+    .signin-container-div > form{
+        width: 90vw;
+    }
+}

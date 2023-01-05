@@ -1,0 +1,52 @@
+.single-option-container {
+    width: 20rem;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #041A33;
+    border-radius: 5px;
+    margin: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    cursor: pointer;
+}
+
+.single-option-container > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+}
+
+.title {
+    width: 100%;
+    height: max-content;
+    background-color: #041A33;
+    padding: 0.5rem;
+}
+
+.title > h3 {
+    font-size: 1.5rem;
+}
+
+.description {
+    width: 100%;
+    height: 5rem;
+    padding: 0.5rem;
+}
+
+.description > p {
+    color: #365076;
+    font-size: 1rem;
+}
+
+.single-option-container > div > p {
+    color: #365076;
+}
+
+@media (max-width: 360px){
+    .single-option-container {
+        width: 89vw;
+       
+    }
+}

@@ -1,0 +1,200 @@
+.budget-details-container {
+    width: 60vw;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 0.5rem 1rem 0rem 1rem;
+    background-color: #041A33;
+    position: relative;
+}
+
+.budget-details-container>h5 {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.budget-details-container>p {
+    font-size: 1.1rem;
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+
+.budget-details-container> button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.4rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.budget-details-container> button > svg {
+    font-size: 1.3rem;
+    color: #5699F6;
+}
+
+.budget-details {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #001428;
+    overflow-y: auto;
+}
+
+.budget-details>h6 {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.budget-details>table {
+    width: 99%;
+    /* height: 100%; */
+    border-radius: 20px;
+    border-collapse: collapse;
+    border: 2px solid #041A33;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.budget-details>table>thead>tr>th {
+    padding: 0.5rem;
+    border: 2px solid #041A33;
+}
+
+
+.budget-details>table>tbody>tr:nth-child(odd) {
+    background-color: #041A33;
+}
+
+.budget-details>table>tbody>tr:nth-child(even) {
+    background-color: #001428;
+}
+
+.add-ingredient {
+    height: 5vh;
+    background-color: #001428 !important;
+}
+
+.add-ingredient>td {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.add-ingredient > td > h5 {
+    color: #fff;
+}
+
+.add-ingredient > td > h5 > p {
+    color: #5699F6;
+    display: inline;
+}
+
+.add-ingredient>td>button {
+    background-color: #5699F6;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.budget-modal-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.budget-modal-buttons>button {
+    background-color: #5699F6;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.budget-modal-buttons>button[name='delete'] {
+    background-color: #ED5E68;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media (max-width: 367px) {
+    .budget-details-container {
+        width: 90vw;
+        height: 65vh;
+    }
+
+    .budget-details {
+        height: 58vh;
+    }
+
+    .budget-details-container>h5 {
+        font-size: 1.2rem;
+    }
+
+    .budget-details-container>p {
+        font-size: 1rem;
+    }
+
+    .budget-details>table {
+        width: 95%;
+        font-size: 0.75rem;
+    }
+
+    .budget-details>table>thead>tr>th {
+        padding: 0rem;
+    }
+
+    .budget-details>table>thead>tr>th:nth-child(3) {
+        width: 4rem;
+    }
+
+    .budget-details>table>tbody>tr>td:nth-child(3) {
+        width: 4rem;
+    }
+}
+
+
+@media (min-width: 367px) and (max-width: 640px) {
+    .budget-details-container {
+        width: 90vw;
+        height: 65vh;
+    }
+
+    .budget-details {
+        height: 58vh;
+    }
+
+    .budget-details-container>h5 {
+        font-size: 1.2rem;
+    }
+
+    .budget-details-container>p {
+        font-size: 1rem;
+    }
+
+    .budget-details>table {
+        width: 95%;
+        font-size: 0.75rem;
+    }
+
+    .budget-details>table>thead>tr>th {
+        padding: 0rem;
+    }
+}

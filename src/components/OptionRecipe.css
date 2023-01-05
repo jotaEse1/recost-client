@@ -1,0 +1,105 @@
+.optionRecipe-container {
+    position: relative;
+    width: 100%;
+    background-color: #041A33;
+    border-radius: 5px;
+    margin: 0.3rem;
+    box-shadow: rgb(0 0 0 / 20%) 0px 60px 40px -7px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.optionRecipe-container > h5 {
+    font-size: 1.1rem;    
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.optionRecipe-container >  div >table {
+    width: 99%;
+    border-radius: 20px;
+    border-collapse: collapse;
+    border: 2px solid #001428;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 0.5rem;
+}
+
+.optionRecipe-container> div >table>thead>tr>th {
+    padding: 0.5rem;
+    border: 2px solid #001428;
+    color: #fff;
+}
+
+.optionRecipe-container> div >table>tbody>tr>td {
+    color: #fff;
+    border: 2px solid #001428;
+}
+
+.optionRecipe-container> div >table>tbody>tr:nth-child(even) {
+    background-color: #041A33;
+    text-align: center;
+}
+
+.optionRecipe-container> div >table>tbody>tr:nth-child(odd) {
+    background-color: #001428;
+    text-align: center;
+}
+
+.view-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    padding: 0.4rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.view-button > svg {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+@media (max-width: 367px) {
+    .optionRecipe-container>h5 {
+        font-size: 0.9rem;
+    }
+
+    .view-button > svg {
+        font-size: 0.9rem;
+    }
+
+    .optionRecipe-container> div > table {
+        font-size: 0.75rem;
+    }
+
+    .optionRecipe-container> div > table>thead>tr>th {
+        padding: 0rem;
+    }
+
+}
+
+
+@media (min-width: 367px) and (max-width: 640px) {
+    .optionRecipe-container>h5 {
+        font-size: 1rem;
+    }
+
+    .view-button > svg {
+        font-size: 1rem;
+    }
+
+    .optionRecipe-container> div >table {
+        font-size: 0.75rem;
+    }
+
+    .optionRecipe-container> div >table>thead>tr>th {
+        padding: 0rem;
+    }
+}
+
+
+

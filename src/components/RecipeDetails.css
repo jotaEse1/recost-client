@@ -1,0 +1,251 @@
+.recipe-details-container {
+    width: 60vw;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 0.5rem 1rem 0rem 1rem;
+    background-color: #041A33;
+    position: relative;
+}
+
+.recipe-details-container>h5 {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.recipe-details-container>p {
+    font-size: 1.1rem;
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+
+.recipe-details-container> button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.4rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.recipe-details-container> button > svg {
+    font-size: 1.3rem;
+    color: #5699F6;
+}
+
+.details-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #001428;
+    overflow-y: auto;
+}
+
+.details-container>h6 {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.details-container>table {
+    width: 99%;
+    /* height: 100%; */
+    border-radius: 20px;
+    border-collapse: collapse;
+    border: 2px solid #041A33;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.details-container>table>thead>tr>th {
+    padding: 0.5rem;
+    border: 2px solid #041A33;
+}
+
+.details-container>table>tbody>tr:nth-child(odd) {
+    background-color: #041A33;
+}
+
+.details-container>table>tbody>tr:nth-child(even) {
+    background-color: #001428;
+}
+
+.total-cost {
+    height: 5vh;
+    background-color: #001428 !important;
+}
+
+.total-cost>td {
+    text-align: center;
+    padding: 1rem;
+}
+
+.total-cost>td>h5 {
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #041A33;
+    color: #fff;
+}
+
+.total-cost>td>h5>p {
+    display: inline;
+    color: #5699F6;
+}
+
+.recipe-modal-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.recipe-modal-buttons>button {
+    background-color: #5699F6;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.recipe-modal-buttons>button[name='delete'] {
+    background-color: #ED5E68;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.price-detail-row{
+    height: 5vh;
+    background-color: #001428 !important;
+}
+
+.input-td{
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.input-td > p {
+    color: #fff;
+}
+
+.input-td > input {
+    width: 2.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #365076;
+    color: #5699F6;
+    padding: 0.2rem;
+}
+
+.input-td > input::placeholder{
+    color: #365076;
+}
+
+.prices-td{
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.3rem;
+    padding-bottom: 1.3rem;
+}
+
+.prices-td > h5{
+    color: #fff;
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.prices-td > h5 > p {
+    color: #5699F6;
+    display: inline;
+    font-size: 1rem;
+}
+
+@media (max-width: 367px) {
+    .recipe-details-container {
+        width: 90vw;
+        height: 65vh;
+    }
+
+    .details-container {
+        height: 58vh;
+    }
+
+    .recipe-details-container>h5 {
+        font-size: 1.2rem;
+    }
+
+    .recipe-details-container>p {
+        font-size: 1rem;
+    }
+
+    .details-container>table {
+        width: 95%;
+        font-size: 0.75rem;
+    }
+
+    .details-container>table>thead>tr>th {
+        padding: 0rem;
+    }
+
+    .prices-td > h5{
+        font-size: 0.9rem;
+    }
+    
+    .prices-td > h5 > p {
+        display: block;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 367px) and (max-width: 640px) {
+    .recipe-details-container {
+        width: 90vw;
+        height: 65vh;
+    }
+
+    .details-container {
+        height: 58vh;
+    }
+
+    .recipe-details-container>h5 {
+        font-size: 1.2rem;
+    }
+
+    .recipe-details-container>p {
+        font-size: 1rem;
+    }
+
+    .details-container>table {
+        width: 95%;
+        font-size: 0.75rem;
+    }
+
+    .details-container>table>thead>tr>th {
+        padding: 0rem;
+    }
+
+    .details-container>table>thead>tr>th:nth-child(4) {
+        width: 6rem;
+        text-align: center;
+    }
+
+    .details-container>table>tbody>tr>td:nth-child(4) {
+        width: 6rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,27 @@
+.list-recipes-container > div {
+    width: 80%;
+}
+
+.choose-pagination-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 1rem 0rem;
+    justify-self: flex-end;
+}
+
+.choose-pagination-control > button {
+    background-color: #5699F6;
+    border: none;
+    color: #fff;
+    padding: 0.3rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media (max-width: 482px){
+    .choose-pagination-control {
+        width: 100%;
+    }
+}

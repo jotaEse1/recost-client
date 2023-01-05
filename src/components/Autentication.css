@@ -1,0 +1,54 @@
+.autentication-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.autentication-options-container {
+    width: 20rem;
+    height: 100vh;
+    background: #041A33;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.autentication-options {
+    height: 30vh;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.autentication-options > h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.options > button {
+    background-color: #5699F6;
+    color: #fff;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    padding: 0.2rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+@media (max-width: 330px){
+    .autentication-options-container{
+        width: 90vw;
+    }
+}

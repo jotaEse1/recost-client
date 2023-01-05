@@ -1,0 +1,51 @@
+.recipe-confirmation-modal {
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+}
+
+.recipe-confirmation-modal > div {
+    width: 16rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 25px 0px #000;
+    background-color: #001428;
+    position: relative;
+}
+
+.recipe-confirmation-modal > div > h4 {
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.recipe-confirmation-modal-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recipe-confirmation-modal-buttons > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;                    
+}
+
+.recipe-confirmation-modal-buttons > button > svg {
+    color: #5699F6;
+    font-size: 1.6rem;
+}
