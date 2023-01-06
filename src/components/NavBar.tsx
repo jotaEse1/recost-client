@@ -18,7 +18,7 @@ const NavBar: React.FC<Props> = ({handleAuth}) => {
             <nav>
                 <ul>
                     <li
-                        onClick={() => navigate('/main')}
+                        onClick={() => navigate('/recost-client/main')}
                     >Inicio</li>
                     <li
                         onClick={() => handleAuth('logout', data)}

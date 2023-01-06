@@ -16,12 +16,12 @@ const Autentication = () => {
                         <h2>Unete a Recost hoy mismo!</h2>
                         <div className='options'>
                             <motion.button 
-                                onClick={() => navigate('signin')}
+                                onClick={() => navigate('/recost-client/signin')}
                                 variants={variantButtonPress}
                                 whileTap='click'
                             >Registrarse</motion.button>
                             <motion.button 
-                                onClick={() => navigate('login')}
+                                onClick={() => navigate('/recost-client/login')}
                                 variants={variantButtonPress}
                                 whileTap='click'
                             >Ingresar</motion.button>
