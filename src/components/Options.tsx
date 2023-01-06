@@ -34,7 +34,7 @@ const Options: React.FC<Props> = ({setLoadOption, handleAuth}) => {
                         whileTap='click'
                         onClick={() => {
                             setLoadOption(true)
-                            navigate('/recost-client/list')
+                            navigate('/list')
                         }}
                         className='single-option-container'
                     >
@@ -48,7 +48,7 @@ const Options: React.FC<Props> = ({setLoadOption, handleAuth}) => {
                         whileTap='click'
                         onClick={() => {
                             setLoadOption(true)
-                            navigate('/recost-client/budget')
+                            navigate('/budget')
                         }}
                         className='single-option-container'
                     >
@@ -62,7 +62,7 @@ const Options: React.FC<Props> = ({setLoadOption, handleAuth}) => {
                         whileTap='click'
                         onClick={() => {
                             setLoadOption(true)
-                            navigate('/recost-client/recipes')
+                            navigate('/recipes')
                         }}
                         className='single-option-container'
                     >

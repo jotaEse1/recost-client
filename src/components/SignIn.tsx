@@ -77,7 +77,7 @@ const SignIn: React.FC<Props> = ({ setMsg, setShowModalMsg, handleAuth, disable,
                             onChange={handleForm}
                         />
                         <span
-                            onClick={() => navigate('/recost-client/login')}
+                            onClick={() => navigate('/login')}
                         >¿Ya tienes una cuenta?</span>
                         <motion.button
                             variants={variantButtonPress}

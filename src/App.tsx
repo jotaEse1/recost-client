@@ -590,8 +590,8 @@ function App() {
     <>
       <AnimatePresence exitBeforeEnter>
         <Routes key={location.pathname} location={location} >
-          <Route path='/recost-client' element={<Autentication />} />
-          <Route path='/recost-client/login' element={
+          <Route path='/' element={<Autentication />} />
+          <Route path='/login' element={
             <Login
               setMsg={setMsg}
               setShowModalMsg={setShowModalMsg}
@@ -599,7 +599,7 @@ function App() {
               disable={disable}
               setDisable={setDisable}
             />} />
-          <Route path='/recost-client/signin' element={
+          <Route path='/signin' element={
             <SignIn
               setMsg={setMsg}
               setShowModalMsg={setShowModalMsg}
@@ -607,13 +607,13 @@ function App() {
               disable={disable}
               setDisable={setDisable}
             />} />
-          <Route path='/recost-client/main' element={!token ? <Navigate to='/' /> :
+          <Route path='/main' element={!token ? <Navigate to='/' /> :
             <Options
               setLoadOption={setLoadOption}
               handleAuth={handleAuth}
             />}
           />
-          <Route path='/recost-client/list' element={!token ? <Navigate to='/' /> :
+          <Route path='/list' element={!token ? <Navigate to='/' /> :
             <PriceList
               setShowModalAddItem={setShowModalAddItem}
               setRowDetails={setRowDetails}
@@ -628,7 +628,7 @@ function App() {
               setLoadOption={setLoadOption}
             />}
           />
-          <Route path='/recost-client/budget' element={!token ? <Navigate to='/' /> :
+          <Route path='/budget' element={!token ? <Navigate to='/' /> :
             <Budgets
               setShowModalBudget={setShowModalBudget}
               allBudgets={allBudgets}
@@ -644,7 +644,7 @@ function App() {
               setLoadOption={setLoadOption}
             />}
           />
-          <Route path='/recost-client/recipes' element={!token ? <Navigate to='/' /> :
+          <Route path='/recipes' element={!token ? <Navigate to='/' /> :
             <Recipes
               allRecipes={allRecipes}
               setShowModalRecipe={setShowModalRecipe}
